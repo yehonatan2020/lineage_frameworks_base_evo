@@ -4,5 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-
+    <!-- HD calling icon -->
+    <dimen name="signal_icon_viewport_size">24dp</dimen>
 </resources>
