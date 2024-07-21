@@ -1,4 +1,4 @@
-/*
+7f34d531f91e2be9c09bf772b7b36c81331a87c6/*
  * Copyright 2021 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -2979,7 +2979,11 @@ public class GlobalActionsDialogLite implements DialogInterface.OnDismissListene
                 mBackgroundDrawable = new ScrimDrawable();
             }
 
-            getWindow().setDimAmount(mBlurUtils.supportsBlursOnWindows() ? 0.54f : 0.88f);
+            float bgAlpha = 0.88f;
+            if (mBlurUtils.supportsBlursOnWindows()) {
+                bgAlpha = 0.54f;
+            }
+            getWindow().setDimAmount(bgAlpha);
 
             // If user entered from the lock screen and smart lock was enabled, disable it
             int user = mSelectedUserInteractor.getSelectedUserId();
