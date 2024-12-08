@@ -1,5 +1,4 @@
-7f34d531f91e2be9c09bf772b7b36c81331a87c6/*
- * Copyright 2021 The Android Open Source Project
+ /* Copyright 2021 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
